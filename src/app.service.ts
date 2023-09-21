@@ -6,7 +6,7 @@ export class AppService {
   constructor(private prisma: PrismaService) {}
 
   getHello(): string {
-    return 'Hello SMC!';
+    return 'Hello PROLEVEL!';
   }
   
 }
