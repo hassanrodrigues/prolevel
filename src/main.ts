@@ -13,6 +13,6 @@ async function bootstrap() {
   });
   new SwaggerService().init(app);
 
-  await app.listen(configService.get('APP_PORT'),"0.0.0.0");
+  await app.listen(configService.get('PORT'),'0.0.0.0');
 }
 bootstrap();
