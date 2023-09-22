@@ -12,3 +12,15 @@ model usuario {
   nome  String @db.VarChar(255)
   email String @unique @db.VarChar(255)
 }
+
+model produtos {
+  id                     Int     @id @default(autoincrement())
+  name                   String  @db.VarChar(255)
+  category               String  @db.VarChar(255)
+  original_price         Decimal @db.Decimal(10, 2)
+  flash_sales            Boolean
+  promotional_price      Decimal @db.Decimal(10, 2)
+  promotional_percentage Decimal @db.Decimal(5, 2)
+  stars                  Int
+  image                  String
+}

@@ -9,8 +9,7 @@ export class SwaggerService {
             .setTitle(process.env.SWAGGER_TITLE)
             .setDescription(process.env.SWAGGER_DESCRIPTION)
             .setVersion(process.env.SWAGGER_VERSION)
-            .addBearerAuth()
-            .addServer(process.env.SWAGGER_API_URL)
+            .addBearerAuth()  
             .build();
 
         const document = SwaggerModule.createDocument(app, config);
